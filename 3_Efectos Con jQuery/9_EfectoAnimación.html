@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Animación </title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    
+    <h1>Efecto Animación</h1>
+
+    <style>
+        .cudrado{
+            background: red;
+            height: 120px;
+            width: 120px;
+            position: absolute;
+        }
+    </style>
+
+    <input id="btnanimar" type="button" value="Efecto Animación"> <br/> <br/>
+    
+    <div class="cudrado">
+
+    </div>
+        
+
+    <script>
+        $(function(){
+            $("#btnanimar").click(function(){
+                $(".cudrado").animate({height:'400px', opacity:'0.4'}, "slow");
+                $(".cudrado").animate({width:'400px', opacity:'0.4'}, "slow");
+                $(".cudrador").animate({height:'120px', opacity:'0.4'}, "slow");
+                $(".cudrador").animate({width:'120px', opacity:'0.4'}, "slow");
+               
+            });
+        });
+      
+    </script>
+    
+</body>
+</html>

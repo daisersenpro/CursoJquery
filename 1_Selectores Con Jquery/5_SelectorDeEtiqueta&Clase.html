@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de etiqueta & clase</title>
+    <script src="jquery/jquery.js"></script>
+</head>
+<body>
+    
+    <h1>Selector de etiqueta & clase</h1>
+
+    <div>
+        <h2>Subtitulo de un div</h2>
+        <p class="parrafo">Parrafo de un div</p>
+    </div>
+
+
+    <script>
+        $(function(){
+            //selector mediante clases
+            $("p.parrafo").html("Hola desde la funcion de jquery");
+        });
+    </script>
+</body>
+</html>

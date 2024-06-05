@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo de Efecto FadeIn FadeOut</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    
+    <h1>Tiempo de Efecto FadeIn FadeOut</h1>
+        <input type="button" id="btnEfecto4" value=" Mostrar Mensaje(FadeIn)">
+
+        <input type="button" id="btnEfecto5" value="Ocultar  Mensaje(FadeOut)">
+
+        <br/>
+        <br/>
+
+        <div id="lblmensaje">Mensaje.....</div>
+
+
+    <script>
+
+        $(function(){
+            $("#btnEfecto4").click(function(){
+                // Muestra el elemento
+                $("#lblmensaje").fadeIn(1000);
+
+            });
+            $("#btnEfecto5").click(function(){
+                // Oculta el elemento
+                $("#lblmensaje").fadeOut(1000);
+
+            });
+
+        });
+    </script>
+    
+</body>
+</html>

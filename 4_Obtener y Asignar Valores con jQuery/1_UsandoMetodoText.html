@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo text</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Usando metodo text</h1>
+     
+    <div id="texto"> Hola soy un div! <br/> <br/> </div> 
+
+    <div id="resultado"></div>
+    <br/>
+    <input id="btnText" type="button" value="Obtener text(get)">
+
+
+    <script>
+        $(function(){
+           $("#btnText").click(function(){
+               a = $("#texto").text();
+
+               alert(a);
+           });
+        });
+    </script>
+</body>
+</html>

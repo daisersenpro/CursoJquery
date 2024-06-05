@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso Ajax-GET</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1>Uso Ajax-GET</h1>
+    
+    <form action="api.php" method="GET">
+        Datos a enviar GET:<br/>
+        <input type="text" name="tarea" id="tarea">
+        <br/>
+        <input type="button" id="btnenviar" value="Enviar">
+    </form>
+    
+    <div id="txtMensaje"></div>
+
+    <script>
+            $("#btnenviar").click(function(e){
+                var tarea = $("#tarea").val();
+                $.get("api.php", { tarea: tarea }, function(data){
+                    alert(data);
+                    console.log(data);
+                    $("#txtMensaje").html(data);
+                });
+            });
+    </script>  
+</body>
+</html>

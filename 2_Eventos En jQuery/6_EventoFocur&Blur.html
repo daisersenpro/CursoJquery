@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Focur & Blur</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Evento Focur & Blur</h1>
+
+    Nombre: <input type="text" name="nombre" id="nombre">
+    Correo: <input type="text" name="coorreo" id="correo">
+
+   
+
+    <script>
+       $("input").focus(function(){
+           $(this).css("background-color","yellow");
+       });
+           $("input").blur(function(){
+           $(this).css("background-color","purple");
+       });
+    </script>
+</body>
+</html>

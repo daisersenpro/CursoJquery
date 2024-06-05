@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Attr para Asignar</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Usando método attr para asignar</h1>
+
+    <img id="imgJQuery" src="img/Logo Original Alcanza Tu Estrella PNG.png" alt="IMGATE">
+
+    <input id="btnAttrSet" type="button" value="Asignar Attr (set)">
+
+    <div id="resultado"></div>
+    <hr>
+    <img src="" alt="" id="imgResultado">
+    <script>
+        $(function(){
+            $("#btnAttrSet").click(function(){
+                var i = $("#imgJQuery").attr("src"); // text, val, html, etc.
+                $("#imgResultado").attr("src",i);
+            });
+        });
+    </script>
+</body>
+</html>

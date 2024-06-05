@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecto por ID</title>
+    <script src="jquery/jquery.js"></script>
+</head>
+<body>
+    
+    <h1>Selector por ID</h1>
+    <div>
+        <h2>Hola soy un titulo h2 desde un div</h2>
+    </div>
+    
+    <div id="mensaje">
+        <h2>Hola soy un titulo h2 desde un div</h2>
+    </div>
+
+
+    <script>
+        $(function(){
+            //selector medante id
+            $("#mensaje").html("h2 desde el div con id y jquery");
+        });
+    </script>
+</body>
+</html>

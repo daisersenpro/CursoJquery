@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método html asignando Val</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Usando método html asignando Val</h1>
+
+    <hr>
+    Resultados obtenidos (aplicando el SET):
+    <div id="resultado"></div>
+    <br/>
+    <div id="texto">Este es el texto de ejemplo <hr/></div>
+    <br/>
+    <input id="txtresultado" type="text" value="">
+    <input id="btnValSet" type="button" value="Asignar Val(set)">
+
+    <script>
+        $(function(){
+            $("#btnValSet").click(function(){
+                var f = $("#texto").html(); // text, val, html, etc.
+                $("#txtresultado").val(f);
+            });
+        });
+    </script>
+</body>
+</html>

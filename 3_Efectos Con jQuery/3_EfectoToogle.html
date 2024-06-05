@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo de Efecto toggle</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    
+    <h1>Tiempo de Efecto toggle</h1>
+        <input type="button" id="btnEfecto3" value="Ocultar y Mostrar Mensaje(toggle)">
+
+        <br/>
+        <br/>
+
+        <div id="lblmensaje">Mensaje.....</div>
+
+
+    <script>
+
+        $(function(){
+            $("#btnEfecto3").click(function(){
+                // Oculta y muestra el elemento
+                $("#lblmensaje").toggle(5000);
+
+            });
+
+        });
+    </script>
+    
+</body>
+</html>

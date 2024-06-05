@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo de Efecto FadeTo</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    
+    <h1>Tiempo de Efecto FadeTo</h1>
+        <input type="button" id="btnEfecto7" value=" Mostrar Mensaje(FadeTo)">
+
+        
+        
+
+        <br/>
+        <br/>
+
+        <div id="lblmensaje">Mensaje.....</div>
+
+
+    <script>
+
+        $(function(){
+            $("#btnEfecto7").click(function(){
+                // Muestra el elemento y saca el elemento
+                $("#lblmensaje").fadeTo(0,0.5);
+                $("#lblmensaje").fadeTo(1000,1);
+
+            });
+        });
+    </script>
+    
+</body>
+</html>

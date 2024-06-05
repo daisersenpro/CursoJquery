@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto SlideUp & SlideDown </title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    
+    <h1>Efecto SlideUp & SlideDown</h1>
+
+    <style>
+        #btnslidedown, #btnslideup, #contenido{
+            text-align: center;
+            background-color: aqua;
+            border: solid 1px black;
+        }
+        #contenido{
+            padding: 50px;
+        }
+    </style>
+        
+
+    <div id="btnslidedown">Expandir</div>
+    <div id="btnslideup">Contraer</div>
+    <div id="contenido">Mensaje</div>
+        
+        
+
+
+
+    <script>
+        $(function(){
+            $("#btnslidedown").click(function(){
+                $("#contenido").slideDown("slow");
+               
+            });
+            $("#btnslideup").click(function(){
+                $("#contenido").slideUp("slow");
+               
+            });
+        });  
+      
+    </script>
+    
+</body>
+</html>

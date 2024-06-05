@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecto por clase</title>
+    <script src="jquery/jquery.js"></script>
+</head>
+<body>
+    
+    <h1>Selector por clase</h1>
+
+    <div class="alerta">
+        <h2>Subtitulo de un div para una clase prueba con jquery</h2>
+    </div>
+
+    <div>
+        <h2>Subtitulo de un div para una clase prueba con jquery</h2>
+    </div>
+
+
+    <script>
+        $(function(){
+            //selector mediante clases
+            $(".alerta").html("Hola desde el div con clase con jquery");
+        });
+    </script>
+</body>
+</html>

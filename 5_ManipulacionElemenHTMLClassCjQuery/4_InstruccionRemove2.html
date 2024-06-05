@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruccion Remove Empty</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Instruccion Remove Empty</h1>
+
+    <div id="idEmpty" style="background-color: aqua; height: 100px">
+        Hola soy un Texto en el Div
+    </div>
+    <br/>
+    <input type="button" value="Empty" id="btnEmpty">
+
+
+    <script>
+        $(function(){
+           $("#btnEmpty").click(function(){
+               $('#idEmpty').empty();
+           });
+        });
+
+    </script>
+    
+</body>
+</html>

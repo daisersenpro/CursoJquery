@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Click</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Evento Click</h1>
+
+    <p>Presiona Acá</p>
+    <p id="mensaje"></p>
+
+   <!--  Este código es para iniciar los scripts de jQuery una vez este listo el HTML
+    Comunmente se se ocupa tambien el document.ready en ves de $(function(){});-->
+    <script>
+        $(function(){
+
+            $('p').click(function(){
+                $("#mensaje").html("Click de funcionamiento del evento jQuery");
+            });
+            
+        });
+    </script>
+</body>
+</html>

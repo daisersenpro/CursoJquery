@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Text Set</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Usando método text set</h1>
+
+    <hr>
+    Resultados obtenidos (aplicando el SET):
+    <div id="resultado"></div>
+    <br/>
+    <div id="texto">Este es el texto de ejemplo</div>
+    <br/>
+    <input type="text" value="">
+    <input id="btnTextSet" type="button" value="Asignar text (set)">
+
+    <script>
+        $(function(){
+            $("#btnTextSet").click(function(){
+                d = $("#texto").text();
+                $("#resultado").text(d);
+            });
+        });
+    </script>
+</body>
+</html>

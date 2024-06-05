@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso Ajax-ajax</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1>Uso Ajax-ajax</h1>
+    
+    <form action="api.php" method="POST">
+        Datos a enviar Ajax-ajax:<br/>
+        <input type="text" name="tarea" id="tarea">
+        <br/>
+        <input type="button" id="btnenviar" value="Enviar">
+    </form>
+    
+    <div id="txtMensaje"></div>
+
+    <script>
+            $("#btnenviar").click(function(e){
+                var objtarea = $("#tarea").val();
+                
+                $.ajax({
+                    type: "POST",
+                    url: "api.php",
+                    data: {tarea: objtarea},
+                    success: function (resultado) {
+                        alert(resultado);
+                        console.log(resultado);
+                        $("#txtMensaje").html(resultado);
+                        
+                    }
+                });
+
+            });
+    </script>  
+</body>
+</html>

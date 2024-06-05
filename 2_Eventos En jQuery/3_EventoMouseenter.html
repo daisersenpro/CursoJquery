@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Click</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Evento Mouseenter</h1>
+
+    <div id="documento">Pasar Mouse para desencadenar el evento Mouseenter</div>
+
+    <p id="mensaje"></p>
+
+   
+
+    <script>
+        $(function(){
+            // El evento Mouseenter
+            $('#documento').mouseenter(function(){
+                $("#mensaje").html("Hola soy el Mouseover");
+            });
+            
+        });
+    </script>
+</body>
+</html>

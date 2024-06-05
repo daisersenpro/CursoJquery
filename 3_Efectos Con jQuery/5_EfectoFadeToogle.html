@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo de Efecto Fadetoogle</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    
+    <h1>Tiempo de Efecto FadeToogle</h1>
+        <input type="button" id="btnEfecto6" value=" Mostrar Mensaje(FadeToggle)">
+
+        
+        
+
+        <br/>
+        <br/>
+
+        <div id="lblmensaje">Mensaje.....</div>
+
+
+    <script>
+
+        $(function(){
+            $("#btnEfecto6").click(function(){
+                // Muestra el elemento y saca el elemento
+                $("#lblmensaje").fadeToggle(1000);
+
+            });
+        });
+    </script>
+    
+</body>
+</html>

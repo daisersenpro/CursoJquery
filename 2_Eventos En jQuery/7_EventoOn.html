@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento On</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Evento On</h1>
+
+    <div id="eventomultiple">Contenido para el evento Multiple</div>
+
+    <div id="pruebadeleventoon">Contenido para el evento On</div>
+
+
+   
+
+    <script>
+        // El evento On aplicado al evento click
+        $("#pruebadeleventoon").on("click",function(){
+            $(this).css("background-color","red");
+        });
+
+        // Evento Multiple con On
+        $("#eventomultiple").on({
+            click:function(){
+                $(this).css("background-color","green");
+            },
+            mouseenter:function(){
+                $(this).css("background-color","blue");
+            },
+            mouseleave:function(){
+                $(this).css("background-color","yellow");
+            }
+        });
+
+            
+    </script>
+</body>
+</html>

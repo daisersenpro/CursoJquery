@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo val</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Usando metodo val</h1>
+     
+    <div id="texto"> Hola soy un div! <br/> <br/> </div> 
+
+    <input type="text" value="Oscar Uh" name="" id="txtContenido">
+    
+    <input id="btnVal" type="button" value="Obtener val(get)">
+
+    <script>
+        $(function(){
+           $("#btnVal").click(function(){
+               c = $("#txtContenido").val();
+               alert(c);
+           });
+        });
+    </script>
+</body>
+</html>

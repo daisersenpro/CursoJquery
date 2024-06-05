@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo de Efecto Hide Show</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    
+    <h1>Tiempo de Efecto Hide Show</h1>
+        <input type="button" id="btnEfecto1" value="Ocultar Mensaje(hide)">
+        <br/> <br/>
+        <input type="button" id="btnEfecto2" value="Mostrar Mensaje(show)">
+
+        <br/>
+        <br/>
+
+        <div id="lblmensaje">Mensaje.....</div>
+
+
+    <script>
+
+        $(function(){
+            $("#btnEfecto1").click(function(){
+                // Oculta el elemento
+                $("#lblmensaje").hide(1000);
+
+            });
+
+            $("#btnEfecto2").click(function(){
+                // Muestra el elemento
+                $("#lblmensaje").show(5000);
+            });
+
+        });
+    </script>
+    
+</body>
+</html>

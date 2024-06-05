@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Click</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Evento Mouseleave</h1>
+
+    <div id="documento">Pasar Mouse para desencadenar el evento Mouseleave</div>
+
+    <p id="mensaje"></p>
+
+   
+
+    <script>
+        $(function(){
+            // El evento Mouseleave
+            $('#documento').mouseleave(function(){
+                $("#mensaje").html("Hola soy el Mouseleave");
+                $("#mensaje").css("color","red");
+            });
+            
+        });
+    </script>
+</body>
+</html>

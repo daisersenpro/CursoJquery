@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load 1</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    
+    <div id="Mensaje1">Contenido 1</div>
+    <div id="Mensaje2">Contenido 2</div>
+
+    <input id="btnLoad" type="button" value="Solicitar información (Load)">
+
+    <script>
+
+        $(function(){
+
+            $("#btnLoad").click(function(){
+
+                $("#Mensaje1").load("http://127.0.0.1:5500/0_Load.html");
+            });
+
+        });
+    </script>
+
+</body>
+</html> 

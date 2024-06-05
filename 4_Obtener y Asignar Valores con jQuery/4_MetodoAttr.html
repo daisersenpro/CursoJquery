@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo attr</title>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <h1>Usando metodo attr cualquier atributo</h1>
+ 
+    <div id="texto"> Hola soy un div! <br/> <br/> </div> 
+
+    <img id="imgJQuery" src="img/Logo Original Alcanza Tu Estrella PNG.png" alt="LogoATE">
+
+    <input id="btnAttr" type="button" value="Obtener attr(get)">
+
+    <script>
+        $(function(){
+           $("#btnAttr").click(function(){
+               d = $("#imgJQuery").attr("src");
+               alert(d);
+           });
+        });
+    </script>
+</body>
+</html>
